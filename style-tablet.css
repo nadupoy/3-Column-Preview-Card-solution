@@ -1,0 +1,111 @@
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: hsl(0, 0%, 95%);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+
+    #sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #suvs {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    #luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    h1 {
+        color:hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display', sans-serif;
+    }
+
+    p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        width: 480px;
+        line-height: 1.5;
+    }
+
+    button {
+        background-color:hsl(0, 0%, 95%);
+        border: none;
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 10px 25px;
+        border-radius: 25px;
+        margin-top: 25px;
+    }
+
+    #sedans button{
+        color:hsl(31, 77%, 52%);
+    }
+
+    #suvs button{
+        color:hsl(184, 100%, 22%);
+    }
+
+    #luxury button {
+        color:hsl(179, 100%, 13%);
+    }
+
+    #sedans button:hover{
+        background-color:hsl(31, 77%, 52%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #suvs button:hover {
+        background-color: hsl(184, 100%, 22%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #luxury button:hover {
+        background-color: hsl(179, 100%, 13%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: x-small;
+        color:hsl(179, 100%, 13%);
+    }
+
+    a {
+        text-decoration: none;
+        color: hsl(184, 100%, 22%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
+    }
+}

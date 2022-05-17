@@ -1,192 +1,339 @@
-@media only screen and (max-width: 992px){
-    html{
+@media only screen and (min-width: 375px), (max-width: 599px){
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
         background-color: hsl(0, 0%, 95%);
-        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
-    body{
-        width: 80%;
-        margin: auto;
+    main {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
     }
 
-    div#content{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20%;
-        margin-bottom: 20%;
+    section {
+        padding: 40px 30px;
     }
 
-    div#sedans{
+    #sedans {
         background-color: hsl(31, 77%, 52%);
         border-radius: 10px 10px 0px 0px;
     }
 
-    div#suvs{
+    #suvs {
         background-color: hsl(184, 100%, 22%);
     }
 
-    div#luxury{
+    #luxury {
         background-color: hsl(179, 100%, 13%);
         border-radius: 0px 0px 10px 10px;
     }
 
-    div.cards{
-        width: 75%;
-        margin: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    h1{
+    h1 {
         color: hsl(0, 0%, 95%);
         font-family: 'Big Shoulders Display', sans-serif;
     }
 
-    p{
+    p {
         color: hsla(0, 0%, 100%, 0.75);
         font-family: 'Lexend Deca', sans-serif;
         font-size: 15px;
+        width: 230px;
         line-height: 1.5;
     }
 
-    button{
-        font-family: 'Lexend Deca', sans-serif;
+    button {
+        background-color:hsl(0, 0%, 95%);
         border: none;
-        background-color: hsl(0, 0%, 95%);
-        padding: 15px 30px;
-        border-radius: 30px;
-        text-align: center;
-    }
-
-    button#sed{
-        color: hsl(31, 77%, 52%);
-    }
-
-    button#suv{
-        color:hsl(184, 100%, 22%);
-    }
-
-    button#lux{
-        color:hsl(184, 100%, 22%);
-    }
-
-    footer{
-        text-align: center;
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 12px;
+        padding: 10px 25px;
+        border-radius: 25px;
+        margin-top: 25px;
+    }
+
+    #sedans button {
+        color:hsl(31, 77%, 52%);
+    }
+
+    #suvs button {
+        color:hsl(184, 100%, 22%);
+    }
+
+    #luxury button {
+        color:hsl(179, 100%, 13%);
+    }
+
+    #sedans button:hover {
+        background-color: hsl(31, 77%, 52%);
+        color: hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #suvs button:hover {
+        background-color:hsl(184, 100%, 22%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #luxury button:hover {
+        background-color: hsl(179, 100%, 13%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: x-small;
+        color:hsl(179, 100%, 13%);
+    }
+
+    a {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
     }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    * {
+        box-sizing: border-box;
+    }
 
-@media only screen and (min-width: 992px){
-    html{
-        height: 100%;
-        width: 100%;
-        background-color:hsl(0, 0%, 95%);
-        margin: 0;
-        display: flex;
+    body {
+        background-color: hsl(0, 0%, 95%);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto auto auto;
         justify-content: center;
     }
 
-    body{
-        width: 80%;
-        margin: auto;
+    section {
+        padding: 40px 30px;
     }
 
-    div#content{
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    #sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0px 0px;
     }
 
-    div#sedans{
-        background-color:hsl(31, 77%, 52%);
-        border-radius: 10px 0px 0px 10px;
+    #suvs {
+        background-color: hsl(184, 100%, 22%);
     }
 
-    div#suvs{
-        background-color:hsl(184, 100%, 22%);
+    #luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 0px 10px 10px;
     }
 
-    div#luxury{
-        background-color:hsl(179, 100%, 13%);
-        border-radius: 0px 10px 10px 0px;
-    }
-
-    div.cards{
-        width: 75%;
-        margin: auto;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    h1{
+    h1 {
         color:hsl(0, 0%, 95%);
         font-family: 'Big Shoulders Display', sans-serif;
     }
 
-    p{
-        color:hsl(0, 0%, 95%);
+    p {
+        color: hsla(0, 0%, 100%, 0.75);
         font-family: 'Lexend Deca', sans-serif;
         font-size: 15px;
+        width: 480px;
         line-height: 1.5;
     }
 
-    button{
-        font-family: 'Lexend Deca', sans-serif;
-        border: none;
+    button {
         background-color:hsl(0, 0%, 95%);
-        padding: 15px 30px;
-        border-radius: 30px;
-        text-align: center;
+        border: none;
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 10px 25px;
+        border-radius: 25px;
+        margin-top: 25px;
     }
 
-    button#sed{
+    #sedans button{
         color:hsl(31, 77%, 52%);
     }
 
-    #sed:hover{
-        color:hsl(0, 0%, 95%);
-        background-color:hsl(31, 77%, 52%);
-        padding: 13px 28px;
-        border-width: 2px;
-        border-style: solid;
-        border-color:hsl(0, 0%, 95%);
-        cursor: pointer;
-    }
-
-    button#suv{
+    #suvs button{
         color:hsl(184, 100%, 22%);
     }
 
-    #suv:hover{
-        color:hsl(0, 0%, 95%);
-        background-color:hsl(184, 100%, 22%);
-        padding: 13px 28px;
-        border-width: 2px;
-        border-style: solid;
-        border-color:hsl(0, 0%, 95%);
-        cursor: pointer;
-    }
-
-    button#lux{
+    #luxury button {
         color:hsl(179, 100%, 13%);
     }
 
-    #lux:hover{
+    #sedans button:hover{
+        background-color:hsl(31, 77%, 52%);
         color:hsl(0, 0%, 95%);
-        background-color:hsl(179, 100%, 13%);
-        padding: 13px 28px;
-        border-width: 2px;
-        border-style: solid;
-        border-color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
         cursor: pointer;
     }
 
-    footer{
+    #suvs button:hover {
+        background-color: hsl(184, 100%, 22%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #luxury button:hover {
+        background-color: hsl(179, 100%, 13%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    footer {
         text-align: center;
+        margin-top: 20px;
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 12px;
+        font-size: x-small;
+        color:hsl(179, 100%, 13%);
+    }
+
+    a {
+        text-decoration: none;
+        color: hsl(184, 100%, 22%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    body {
+        background-color: hsl(0, 0%, 95%);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+    
+    #sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #suvs {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    #luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    h1 {
+        color: hsl(0, 0%, 95%);
+        font-family: 'Big Shoulders Display', sans-serif;
+    }
+
+    p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        width: 210px;
+        line-height: 1.5;
+    }
+
+    button {
+        background-color: hsl(0, 0%, 95%);
+        border: none;
+        font-family: 'Lexend Deca', sans-serif;
+        padding: 10px 25px;
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+
+    #sedans button {
+        color:hsl(31, 77%, 52%);
+    }
+
+    #suvs button {
+        color:hsl(184, 100%, 22%);
+    }
+
+    #luxury button {
+        color:hsl(179, 100%, 13%);
+    }
+
+    #sedans button:hover {
+        background-color:hsl(31, 77%, 52%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #suvs button:hover {
+        background-color:hsl(184, 100%, 22%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    #luxury button:hover {
+        background-color:hsl(179, 100%, 13%);
+        color:hsl(0, 0%, 95%);
+        border: solid 2px hsl(0, 0%, 95%);
+        padding: 8px 23px;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: x-small;
+        color:hsl(179, 100%, 13%);
+    }
+
+    a {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
+    }
+
+    a:visited {
+        text-decoration: none;
+        color:hsl(184, 100%, 22%);
     }
 }
